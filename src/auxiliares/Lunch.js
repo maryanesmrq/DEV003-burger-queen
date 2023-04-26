@@ -37,13 +37,13 @@ export default function Lunch()
 {
     return (
         <section className={styles.bg_lunch}>
-            <ul>
+            <ul className={styles.ul}>
                 {
                     products.map(product =>
-                        <li
+                        <li className={styles.li}
                             key={product.id}
                             style={{
-                                color: product.stock ? 'magenta' : 'grey'
+                                color: product.stock ? 'black' : 'grey'
                             }}
                         >
                             <h1>{product.title}</h1>
