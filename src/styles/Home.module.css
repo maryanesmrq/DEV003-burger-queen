@@ -229,13 +229,6 @@
 }
 /* ------------------------------ ORDER.JS ------------------------------ */
 
-.bg_lunch{
-  background-color: #B63C50;
-  float: left;
-  width: 55%;
-  /* display:flex; */
-}
-
 .bg_order{
   background-color: #F8A000;
   float: left;
@@ -286,4 +279,22 @@
   font-size: large;
   background-color: #F8A000;
   border: rgba(255, 255, 255, 0.7) 2px solid;
+}
+
+/* ------------------------------ LUNCH.JS ------------------------------ */
+
+.bg_lunch{
+  background-color: #B63C50;
+  float: left;
+  width: 55%;
+  /* display:flex; */
+}
+
+.li{
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  list-style: none;
+
 }
