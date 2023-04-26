@@ -1,35 +1,31 @@
 import { useState } from 'react';
+import styles from '@/styles/Home.module.css'
 
 export default function Order() {
     return (
-        <>
-        <div className="data_client">
-            <h3>DATOS DE CLIENTE</h3>
-            <div className="input-group-">
+        <section className={styles.bg_order}>
+        <div className={styles.data_client}>
+            <h3 className={styles.h3}>DATOS DE CLIENTE</h3>
+            <div className={styles.input_group}>
                 <input id="nameClient" placeholder="Nombre"></input>
                 <input id="numberTable" placeholder="Mesa"></input>
             </div>
         </div>
-        <div className="data_order">
-            <h3>DATOS DEL PEDIDO</h3>
-            <div> lo que el cliente agregue al pedido <br></br>
+        <div className={styles.data_order}>
+            <h3 className={styles.h3}>DATOS DEL PEDIDO</h3>
+            <div className={styles.order_group}> lo que el cliente agregue al pedido <br></br>
                 <MyButtonN/>
                 <MyButton/>
                 
             </div>
             <h4>Total de pedido</h4>
-            <ButtonSend/>
+            <button className={styles.send_order}>Enviar Pedido</button>
         </div>
-        </>
+        </section>
     )
 }
 
 
-function ButtonSend(){
-return(
-    <button className="send_order">Enviar Pedido</button>
-)
-}
 
 function MyButton() {
     const [count, setCount] = useState(0);

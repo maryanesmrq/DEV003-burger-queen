@@ -1,5 +1,6 @@
-import Order from "@/auxiliares/order";
-import Lunch from "@/auxiliares/lunch";
+import Order from "@/auxiliares/Order.js";
+import Lunch from "@/auxiliares/Lunch.js";
+
 
 export default function Menu(){
     return(

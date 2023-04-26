@@ -1,3 +1,5 @@
+import styles from '@/styles/Home.module.css'
+
 import Image from 'next/image'
 // import '@/styles/globals.css'
 
@@ -33,9 +35,7 @@ const products = [
 export default function Lunch() 
 {
     return (
-        <>
-        
-
+        <section className={styles.bg_lunch}>
             <ul>
                 {
                     products.map(product =>
@@ -61,6 +61,6 @@ export default function Lunch()
                 }
             </ul>
 
-        </>
+        </section>
     );
 }

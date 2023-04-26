@@ -12,7 +12,7 @@
 //   )
 // }
 
-export default function PintarenPantalla(){
+export default function Breakfast(){
   return(
     <>
     <h1> ESTE ES EL TITULO DE MI MODULO BREAKFAST</h1>
