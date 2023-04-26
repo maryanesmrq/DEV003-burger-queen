@@ -12,11 +12,15 @@
 //   )
 // }
 
+const stockBreakfast = [
+  {title: '', stock: true, costo: '', id: 1, imageUrl:''}
+
+]
+
 export default function Breakfast(){
   return(
     <>
-    <h1> ESTE ES EL TITULO DE MI MODULO BREAKFAST</h1>
-    <input placeholder="escribe tu nombre aquí"></input>
+    
     
     </>
     )
