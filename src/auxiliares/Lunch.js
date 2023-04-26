@@ -58,7 +58,11 @@ export default function Lunch()
                             <h4>{product.title}</h4>
                             <p>{product.costo}</p>
                             </div>
-                            <button>AGREGAR</button>
+                            <button style={{
+                                color: product.stock ? 'white' : 'black',
+                                background: product.stock ? '#F8A000' : 'grey'
+                            }}
+                            >AGREGAR</button>
                         </li>)
                 }
             </ul>
