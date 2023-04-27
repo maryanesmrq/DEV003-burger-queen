@@ -183,7 +183,7 @@
         rgba(var(--background-start-rgb), 1),
         rgba(var(--callout-rgb), 0.5));
     background-clip: padding-box;
-    backdrop-filter: blur(24px);
+    /* backdrop-filter: blur(24px); */
   }
 
   .description div {
@@ -355,12 +355,27 @@
 }
 
 /* ------------------------------ NAV.JS ------------------------------ */
-.option_menuOrder {
-  position: absolute;
+.NavbarItems{
+  /* position: absolute; */
   width: 59.30%;
   height: 100px;
   background: #881E3B;
   font-size:large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+.NavbarItems li{
+  display: inline;
+  list-style: none;
+  font-size: 18px;
+  padding: 10px;
+  line-height: 80px;
+}
+.NavbarItems a{
+  color: white;
+  text-decoration: none;
 }
 
 
