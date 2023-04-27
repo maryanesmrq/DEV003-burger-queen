@@ -1,5 +1,5 @@
 import styles from '@/styles/Home.module.css'
-import Breakfast from './breakfast';
+import Breakfast from './Breakfast';
 import Lunch from './Lunch';
 
 const MenuItems = [

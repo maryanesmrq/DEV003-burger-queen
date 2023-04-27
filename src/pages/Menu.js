@@ -1,6 +1,6 @@
 import Order from "@/auxiliares/Order.js";
 import Lunch from "@/auxiliares/Lunch.js";
-import Breakfast from "@/auxiliares/breakfast.js";
+import Breakfast from "@/auxiliares/Breakfast";
 import Nav from "@/auxiliares/Nav.js";
 
 
