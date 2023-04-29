@@ -2,6 +2,7 @@ import styles from '@/styles/Home.module.css'
 import Breakfast from './Breakfast';
 import Lunch from './Lunch';
 
+
 const MenuItems = [
     {
         Title: "DESAYUNOS",
