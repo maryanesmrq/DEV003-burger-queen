@@ -306,9 +306,16 @@
 .NavbarOptions{
   cursor: pointer;
   width: 30%;
-  background: #881E3B;
+  background: #3F3F3F ;
   line-height: 80px;
-  padding: 2%  9.7010%;
+  padding: 2%  9.60%;
+  color: gray;
+  }
+
+  .selected {
+    color: white;
+    background-color: #881E3B;
+    font-weight: bold;
   }
 
 /* ------------------------------ BREAKFAST.JS ------------------------------ */
