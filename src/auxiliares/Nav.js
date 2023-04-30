@@ -1,6 +1,7 @@
 import styles from '@/styles/Home.module.css'
 
 
+
 // const MenuItems = [
 //     {
 //         Title: "DESAYUNOS",
@@ -40,8 +41,8 @@ export default function Nav(props){
 
   return(
     <nav className={styles.NavbarItems}>
-      <a className={styles.NavbarOptions} onClick={()=> props.setCategory('desayunos')}  > DESAYUNOS </a>
-      <a className={styles.NavbarOptions} onClick={()=> props.setCategory('almuerzos')}> ALMUERZOS </a>
+      <a className={styles.NavbarOptions} onClick={()=> props.setCategory(true)}  > DESAYUNOS </a>
+      <a className={styles.NavbarOptions} onClick={()=> props.setCategory(false)}> ALMUERZOS </a>
 
     </nav>
 

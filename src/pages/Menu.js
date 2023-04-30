@@ -8,12 +8,13 @@ import { useState } from "react";
 
 
 export default function Menu(){
-    const [category, setCategory] =  useState(Boolean)
+    let [category, setCategory] =  useState(true)
     return(
         <>
         <Nav setCategory={setCategory} />
         
         {category ? <Breakfast/>:<Lunch/> }
+       
         <Order/>
         </>
     )
