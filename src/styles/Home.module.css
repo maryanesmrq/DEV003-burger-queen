@@ -308,7 +308,7 @@
   width: 30%;
   background: #881E3B;
   line-height: 80px;
-  padding: 24px 129px;
+  padding: 2%  9.7010%;
   }
 
 /* ------------------------------ BREAKFAST.JS ------------------------------ */
@@ -317,6 +317,7 @@
   background-color: #B63C50;
   float: left;
   width: 60%;
+  
   /* display:flex; */
 }
 

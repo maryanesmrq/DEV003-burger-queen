@@ -1,6 +1,6 @@
 import Order from "@/auxiliares/Order.js";
 import Lunch from "@/auxiliares/Lunch.js";
-import Breakfast from "@/auxiliares/Breakfast";
+import Breakfast from "@/auxiliares/Breakfast.js";
 import Nav from "@/auxiliares/Nav.js";
 import { useState } from "react";
 
@@ -8,12 +8,12 @@ import { useState } from "react";
 
 
 export default function Menu(){
-    const [category, setCategory] =  useState(true)
+    const [category, setCategory] =  useState(Boolean)
     return(
         <>
-        <Nav/>
+        <Nav setCategory={setCategory} />
         
-        {category ? <Breakfast/>: <Lunch/>}
+        {category ? <Breakfast/>:<Lunch/> }
         <Order/>
         </>
     )

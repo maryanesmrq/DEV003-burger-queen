@@ -1,6 +1,4 @@
 import styles from '@/styles/Home.module.css'
-import Breakfast from './Breakfast';
-import Lunch from './Lunch';
 
 
 // const MenuItems = [
@@ -38,19 +36,16 @@ import Lunch from './Lunch';
 //     );
 // }
 
-export default function Nav(){
+export default function Nav(props){
 
   return(
     <nav className={styles.NavbarItems}>
-      <a className={styles.NavbarOptions} > DESAYUNOS </a>
-      <a className={styles.NavbarOptions}> ALMUERZOS </a>
+      <a className={styles.NavbarOptions} onClick={()=> props.setCategory('desayunos')}  > DESAYUNOS </a>
+      <a className={styles.NavbarOptions} onClick={()=> props.setCategory('almuerzos')}> ALMUERZOS </a>
 
     </nav>
 
   )
 }
 
-function OnClick(){
-onclick(M)
-  
-}
+// onClick={()=> setCategory}
