@@ -9,19 +9,6 @@ import styles from '@/styles/Home.module.css'
 // }
 
 
-// export default function Lunch(){
-//     return(
-//         <>
-//          <nav>
-//             <a class="class1">DESAYUNOS</a>
-//             <a class="classMenu">ALMUERZOS</a>
-//         </nav>
-
-//         </>
-//     )
-// }
-
-
 const products = [
     { title: 'Hamburguesa Simple', stock: true, costo: '$10', id: 1, imageUrl: 'https://assets.unileversolutions.com/recipes-v2/210995.jpg' },
     { title: 'Hamburguesa Doble', stock: true, costo: '$15', id: 2, imageUrl: 'https://assets.unileversolutions.com/recipes-v2/210995.jpg' },
