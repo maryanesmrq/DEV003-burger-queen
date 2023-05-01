@@ -14,8 +14,11 @@ export default function Order() {
       <div className={styles.data_order}>
         <h3 className={styles.h3}>DATOS DEL PEDIDO</h3>
         <div className={styles.order_group}> lo que el cliente agregue al pedido <br></br>
-          <MyButtonN />
-          <MyButton />
+          <div>
+            <button onClick={buttonDecrement}>-</button>
+            <span>{orderCount}</span>
+            <button onClick={buttonIncrement}>+</button>
+          </div>
 
         </div>
         <h4>Total de pedido</h4>
@@ -27,29 +30,18 @@ export default function Order() {
 
 
 
-function MyButton() {
-  const [count, setCount] = useState(0);
+function ProductOrder() {
+  const [orderCount, setOrderCount] = useState(0);
 
-  function handleClick() {
-    setCount(count + 1);
+  const handleIncrement = () => {
+    setOrderCount(orderCount + 1);
   }
 
-  return (
-    <button onClick={handleClick}>
-      (+) {count}
-    </button>
-  );
-}
-function MyButtonN() {
-  const [count, setCount] = useState(0);
-
-  function handleClick() {
-    setCount(count - 1);
+  const handleDecrement = () => {
+    if (orderCount > 0) {
+      setOrderCount(orderCount - 1);
+    }
   }
 
-  return (
-    <button onClick={handleClick}>
-      (-) {count}
-    </button>
-  );
+
 }
