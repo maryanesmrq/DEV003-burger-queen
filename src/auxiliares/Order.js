@@ -23,9 +23,9 @@ export default function Order() {
 
         <div className={styles.items_quantity} >
           
-          <button className={styles.button} onClick={() => setOrderCount(orderCount + 1)}>+</button>
+          <button className={styles.buttonCount} onClick={() => setOrderCount(orderCount + 1)}>+</button>
           <p> {orderCount}</p>
-          <button className={styles.button}
+          <button className={styles.buttonCount}
             onClick={() => {
               if (orderCount > 0) {
                 setOrderCount(orderCount - 1);
