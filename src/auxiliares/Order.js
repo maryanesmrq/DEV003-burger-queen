@@ -1,7 +1,13 @@
 import { useState } from 'react';
 import styles from '@/styles/Home.module.css'
+import Lunch from './Lunch.js';
 
 export default function Order() {
+
+  const [orderCount, setOrderCount] = useState(0);
+
+
+
   return (
     <section className={styles.bg_order}>
       <div className={styles.data_client}>
@@ -14,10 +20,20 @@ export default function Order() {
       <div className={styles.data_order}>
         <h3 className={styles.h3}>DATOS DEL PEDIDO</h3>
         <div className={styles.order_group}> lo que el cliente agregue al pedido <br></br>
-          <div>
-            <button onClick={buttonDecrement}>-</button>
-            <span>{orderCount}</span>
-            <button onClick={buttonIncrement}>+</button>
+
+        <div className={styles.items_quantity} >
+          
+          <button className={styles.button} onClick={() => setOrderCount(orderCount + 1)}>+</button>
+          <p> {orderCount}</p>
+          <button className={styles.button}
+            onClick={() => {
+              if (orderCount > 0) {
+                setOrderCount(orderCount - 1);
+              }
+            }}
+          >
+            -
+          </button>
           </div>
 
         </div>
@@ -30,18 +46,19 @@ export default function Order() {
 
 
 
-function ProductOrder() {
-  const [orderCount, setOrderCount] = useState(0);
 
-  const handleIncrement = () => {
-    setOrderCount(orderCount + 1);
-  }
+// function ProductOrder() {
+//   const [orderCount, setOrderCount] = useState(0);
 
-  const handleDecrement = () => {
-    if (orderCount > 0) {
-      setOrderCount(orderCount - 1);
-    }
-  }
+//   const buttonIncrement = () => {
+//     setOrderCount(orderCount + 1);
+//   }
+
+//   const buttonDecrement = () => {
+//     if (orderCount > 0) {
+//       setOrderCount(orderCount - 1);
+//     }
+//   }
 
 
-}
+// }
