@@ -13,6 +13,12 @@ const stockBreakfast = [
 ]
 
 export default function Breakfast() {
+  const selectedProducts = [];
+  const handleClick = (product) => {
+    selectedProducts.push(product);
+    console.log(selectedProducts)
+  }
+
   return (
     <section className={styles.bg_breakfast}>
       <ul className={styles.ul}>
@@ -40,7 +46,8 @@ export default function Breakfast() {
               <button style={{
                 color: product.stock ? 'white' : 'black',
                 background: product.stock ? '#F8A000' : 'grey'
-              }}>
+              }}
+                onClick={() => handleClick(product)}>
                 {product.stock ? 'AGREGAR' : 'SIN STOCK'}
               </button>
             </li>)
